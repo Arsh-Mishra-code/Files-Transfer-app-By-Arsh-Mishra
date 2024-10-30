@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flie Sharing app</title>
+<!-- CSS file-->
+  <link rel="stylesheet" href="style.css" />
+  <!--Responsive Css file-->
+  <link rel="stylesheet" href="queries.css">
+<!--faviconioon-->
+ <link rel="shortcut icon" href="icon/Logo.jpg" type="image/x-icon" />
+ <!--Remixicon-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <!--Googlefont-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=task_alt" />
+</head>
+<body>
+  <!--Main-->
+  <div id="main">
+    <div class="nav">
+      <!--Navbar-->
+      <h1>FSA</h1>
+      <div class="nav-item">
+        <a href="#">Home</a>
+        <a href="#">Tansfer</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#"> <i class="ri-vip-crown-line"></i>Get Pro</a>
+        <button><i class="ri-login-box-line"></i>Sing in</button>
+      </div>
+
+    </div>
+    <!--Navbar End-->
+
+    <!--Landing Page Start-->
+    <div class="Landingpage">
+      <div class="text-content">
+        <h1>Share files directly from your device to other device</h1>
+        <p>
+          Send files of any size directly from your device without ever
+          storing anything online
+        </p>
+        <div class="feature">
+          <h4><i class="ri-checkbox-circle-line"></i>Free Sharing</h4>
+          <h4><i class="ri-checkbox-circle-line"></i>No Ads</h4>
+          <h4><i class="ri-checkbox-circle-line"></i>End-to-end encrypted</h4>
+        </div>
+        <a href="#FileUploadingPages">Start<i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <!--Landing Page end-->
+
+    <!--FileUploading Page start-->
+    <div id="FileUploadingPages">
+      <h1>Upload Your File</h1>
+      <p>darg and drop or choose file and click on Upload button and Generate share link</p>
+      <div class="UploadingPage">
+        <div class="upload-container" id="uploadContainer">
+          <h3>Drag & Drop Your File Here</h3>
+          <label class="upload-button" for="fileInput"></label>
+          <input type="file" id="fileInput" multiple />
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-bar-fill" id="progressBarFill"></div>
+          </div>
+          <button>Upload file</button>
+        </div>
+        <table>
+          <caption> Uploaded file</caption>
+          <tr>
+            <th>File Name</th>
+            <th>Uploaded By</th>
+            <th>Share Link</th>
+            <th>Delete File</th>
+          <tr>
+            <td>
+              <h6>File Name</h6>
+            </td>
+            <td>
+              <h6>Uploaded by</h6>
+            </td>
+            <td><i class="ri-share-line"></i></td>
+            <td> <i class="ri-delete-bin-line"></i></td>
+          </tr>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--FileUploading Page End-->
+
+    <!--FileDownloading Page start-->
+    <div class="FileDownloadingPage">
+      <h1>Dowload Your file</h1>
+      <p id="paragraph">simple paste url of file and click on download button</p>
+      <div class="download">
+        <label for="url">Enter Url:</label>
+        <input type="text" placeholder="Enter url here" id="url">
+        <a href="#">Download Now</a>
+      </div>
+    </div>
+    <!--FileDownloading Page End-->
+
+  </div>
+</body>
+
+</html>

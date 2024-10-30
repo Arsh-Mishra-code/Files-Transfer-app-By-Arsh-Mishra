@@ -1,0 +1,251 @@
+ @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+
+}
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+/* Nav bar start */
+.nav {
+  width: 100%;
+  padding: 0vw 3vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+}
+.nav-item a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+.nav-item a:hover{
+  font-size: 20px;
+}
+.nav-item button {
+  padding: 0.5vw 1vw;
+  background-color: black;
+  color: white;
+  font-size: 1.2vw;
+  border-radius: 2vw;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.2;
+}
+#menu {
+  display: none;
+}
+.nav-item button:hover {
+  background-color: red;
+  cursor: pointer;
+}                                      /* Nav bar end */
+
+.Landingpage {                         /* Landing Page start */
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-content {
+  width: 90%;
+  min-height: 65vh;
+  text-align: center;
+}
+.text-content > h1 {
+  font-size: 5vw;
+  line-height: 6vw;
+  letter-spacing: 3px;
+}
+.text-content > p {
+  font-size: 1.66vm;
+  margin-top: 1vw;
+  color: #4a4545dd;
+}
+.feature {
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.feature > h4 {
+  font-size: 2vw;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 3vw;
+}
+.feature p {
+  color: rgb(146, 238, 8);
+}
+.text-content > a {
+  text-decoration: none;
+  padding: 1vw 3vw;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 1.6vw;
+  border-radius: 2vw;
+  border: none;
+}
+.text-content > a:hover {
+  background-color: red;
+  cursor: pointer;
+}                                             
+                                         /* Landing Page end  */
+
+#FileUploadingPages>h1{                    /* -FileUploading Page Start */
+  margin-left: 30vw;
+  font-size: 4vw;
+  margin-bottom: 1vw;
+  
+}
+#FileUploadingPages>p{
+  margin-bottom: 1vw;
+  margin-left: 24vw;
+} 
+
+
+.UploadingPage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: #dddd; */
+  margin-top: 2vw;
+}
+.upload-container {
+  width: 50%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dotted black;
+  border-radius: 2vw;
+  /* flex-direction: column; */
+  box-shadow: 10px 10px rgb(208, 205, 206);
+  
+
+}
+.upload-container > h3 {
+  font-size: 2vw;
+  font-weight: 600;
+}
+#fileInput {
+  margin-top: 2vw;
+  font-size: 1vw;
+  background-color: black;
+  color: white;
+  border-radius: 2vw;
+}
+.progress-bar {
+  width: 50%;
+  height: 10px;
+  background-color: hsl(181, 92%, 50%);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 2vw;
+}
+
+.progress-bar-fill {
+ min-height: 30vh;
+  width: 0;
+  background-color: #007bff;
+  transition: width 0.2s;
+}
+.upload-container button {
+  padding: 0.7vw 1.2vw;
+  background-color: black;
+  color: white;
+  font-size: 1.3vw;
+  border-radius: 2vw;
+  border: none;
+  cursor: pointer;
+  margin-top: 3vw;
+}
+
+.upload-container button:hover {
+  background-color: rgb(155, 151, 151);
+  cursor: pointer;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+                                 /* -FileUploading Page End */
+
+                                          /* FileDownloading Page start */
+.FileDownloadingPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}  
+.FileDownloadingPage > h1 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: black;
+}
+#paragraph {
+  font-size: 2vw;
+  font-weight: 600;
+  margin: 1vw;
+}
+.download {
+  width: 30%;
+ min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dotted black;
+  gap: 4vw;
+  border-radius: 2vw;
+  box-shadow: 10px 10px rgb(208, 205, 206);
+}
+.download a {
+  text-decoration: none;
+  padding: 1.5vw 3vw;
+  font-size: 2vw;
+  background-color: black;
+  color: white;
+  border-radius: 2vw;
+}
+#url {
+  height: 30px;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 2vw;
+  font-weight: 600;
+  font-size: 1vw;
+} 
+               /* FileDownloading Page end  */
+
+

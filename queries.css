@@ -1,0 +1,92 @@
+@media only screen and (max-width: 500px) {
+  .main {
+    overflow: hidden;
+  } /* Nav bar start */
+  .nav h1 {
+    font-size: 4vw;
+  }
+
+  .nav-item {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+
+  /* Nav bar end */
+
+  /*Landing Page start */
+  .text-content {
+    min-width: 50vh;
+    min-height: 50vh;
+  }
+  .text-content > h1 {
+    font-size: 8vw;
+    line-height: 9vw;
+  }
+  .text-content > p {
+    font-size: 2.5vw;
+    padding: 0px 10px;
+  }
+
+  .feature > h4 {
+    font-size: 3vw;
+  }
+  .text-content > a {
+    font-size: 2vw;
+    padding: 2vw 4vw;
+  }
+  /* Landing Page end  */
+
+  /* -FileUploading Page Start */
+
+  #FileUploadingPages > h1 {
+    margin-left: 33vw;
+    font-size: 5vw;
+    margin-bottom: 1vw;
+  }
+  #FileUploadingPages > p {
+    margin-bottom: 2vw;
+    margin-left: 12vw;
+    font-size: 2vw;
+  }
+
+  .UploadingPage {
+    flex-direction: column;
+  }
+  .upload-container {
+    min-height: 30vh;
+    width: 60%;
+    margin-bottom: 5vw;
+  }
+  .upload-container > h3 {
+    font-size: 2.5vw;
+  }
+  .upload-container button {
+    font-size: 1.7vw;
+    padding: 1vw 1.5vw;
+  }
+  /* -FileUploading Page End */
+
+  /* FileDownloading Page start */
+
+  .FileDownloadingPage {
+    min-height: 100vh;
+  }
+  .FileDownloadingPage > h1 {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+  #paragraph {
+    font-size: 3vw;
+    margin-bottom: 4vw;
+  }
+  .download {
+    width: 65%;
+    min-height: 45vh;
+    margin-bottom: 17vw;
+  }
+  .download > p {
+    font-size: 3vw;
+  }
+}
